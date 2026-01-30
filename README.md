@@ -7,7 +7,7 @@ A tiny Go CLI that generates a stream of lorem ipsum text.
 ### Go users
 
 ```
-go install github.com/yourname/lorem/cmd/lorem@latest
+go install github.com/bjluckow/lorem@latest
 ```
 
 Make sure `$GOBIN` or `$HOME/go/bin` is in your PATH.
@@ -15,9 +15,9 @@ Make sure `$GOBIN` or `$HOME/go/bin` is in your PATH.
 ### Build from source
 
 ```
-git clone https://github.com/yourname/lorem
+git clone https://github.com/bjluckow/lorem
 cd lorem
-go build -o lorem ./cmd/lorem
+go build -o lorem .
 ```
 
 ---
@@ -31,11 +31,11 @@ lorem -w WORDS -n LINES [-d DELIMITER]
 ### Flags
 
 ```
+-n int
+    number of lines (required, must be > 0, default 10)
+
 -w int
     words per line (default 10)
-
--n int
-    number of lines (required, must be > 0)
 
 -d string
     line delimiter (default "\n")
